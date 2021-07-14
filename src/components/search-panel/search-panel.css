@@ -1,0 +1,11 @@
+.search-panel {
+    margin: 2rem 0;
+}
+
+.search-panel .search-input {
+    width: auto;
+    flex-grow: 1;
+    margin-right: 3px;
+    min-width: 110px;
+    text-indent: 10px;
+}
