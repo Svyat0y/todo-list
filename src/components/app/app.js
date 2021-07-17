@@ -109,7 +109,6 @@ export default class App extends Component {
 	}
 
 	render() {
-		window.state = this.state;
 
 		const { todoData, term, filter } = this.state;
 

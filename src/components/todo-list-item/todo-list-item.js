@@ -15,24 +15,24 @@ const TodoListItem = ({ label, onDeleted, onToggleDone, onToggleImportant, impor
 
 	return (
 		<span className={ classNames }>
-				<span className='todo-list-item-label'
-					  onClick={ onToggleDone }>
+			<span className='todo-list-item-label'
+				  onClick={ onToggleDone }>
 					{ label }
-				</span>
-
-				<span className='btn-group btn-wr d-flex'>
-					<button type='button'
-							className='btn btn-outline-success btn-sm'
-							onClick={ onToggleImportant }>
-						<FontAwesomeIcon icon={ faExclamation }/>
-					</button>
-					<button type='button'
-							className='btn btn-outline-danger btn-sm'
-							onClick={ onDeleted }>
-						<FontAwesomeIcon icon={ faTrashAlt }/>
-					</button>
-				</span>
 			</span>
+
+			<span className='btn-group btn-wr d-flex'>
+				<button type='button'
+						className='btn btn-outline-success btn-sm'
+						onClick={ onToggleImportant }>
+						<FontAwesomeIcon icon={ faExclamation }/>
+				</button>
+				<button type='button'
+						className='btn btn-outline-danger btn-sm'
+						onClick={ onDeleted }>
+						<FontAwesomeIcon icon={ faTrashAlt }/>
+				</button>
+			</span>
+		</span>
 	);
 };
 
